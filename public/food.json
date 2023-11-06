@@ -1,0 +1,443 @@
+[
+    {
+        "food_name": "Spaghetti Bolognese",
+        "image_url": "https://i.ibb.co/ZdFbjt9/Spaghetti-Bolognese-Italy.jpg",
+        "category": "Pasta Dishes",
+        "quantity": "1 plate",
+        "price": 12.99,
+        "food_origin": "Italy",
+        "short_description": "A classic Italian pasta dish with ground beef, tomato sauce, onions, garlic, and Italian herbs."
+    },
+    {
+        "food_name": "Fettuccine Alfredo",
+        "image_url": "https://i.ibb.co/C738FGk/Fettuccine-Alfredo.jpg",
+        "category": "Pasta Dishes",
+        "quantity": "1 plate",
+        "price": 14.99,
+        "food_origin": "Italy",
+        "short_description": "Creamy Alfredo sauce made with butter, heavy cream, and Parmesan cheese, served over fettuccine pasta."
+    },
+    {
+        "food_name": "Pad Thai",
+        "image_url": "https://i.ibb.co/3mMtc2b/Pad-Thai.jpg",
+        "category": "Pasta Dishes",
+        "quantity": "1 serving",
+        "price": 10.99,
+        "food_origin": "Thailand",
+        "short_description": "Stir-fried rice noodles with shrimp, tofu, peanuts, bean sprouts, and a flavorful tamarind sauce."
+    },
+    {
+        "food_name": "Lo Mein",
+        "image_url": "https://i.ibb.co/4tXWkJM/Lo-Mein.jpg",
+        "category": "Pasta Dishes",
+        "quantity": "1 serving",
+        "price": 11.99,
+        "food_origin": "China",
+        "short_description": "Chinese egg noodles stir-fried with vegetables, soy sauce, and a choice of protein."
+    },
+    {
+        "food_name": "Macaroni and Cheese",
+        "image_url": "https://i.ibb.co/m6cPwqn/Macaroni-and-Cheese.jpg",
+        "category": "Pasta Dishes",
+        "quantity": "1 bowl",
+        "price": 8.99,
+        "food_origin": "United States",
+        "short_description": "Elbow macaroni with a rich and creamy cheese sauce, baked to perfection."
+    },
+    {
+        "food_name": "Croissant",
+        "image_url": "https://i.ibb.co/frtDRcq/Croissant.jpg",
+        "category": "Bakery Items",
+        "quantity": "1 piece",
+        "price": 3.99,
+        "food_origin": "France",
+        "short_description": "Flaky and buttery pastry, typically eaten for breakfast or as a snack."
+    },
+    {
+        "food_name": "Baguette",
+        "image_url": "https://i.ibb.co/Pwqdj41/Baguette.jpg",
+        "category": "Bakery Items",
+        "quantity": "1 loaf",
+        "price": 5.99,
+        "food_origin": "France",
+        "short_description": "A long, thin loaf of French bread with a crispy crust and soft interior."
+    },
+    {
+        "food_name": "Pretzel",
+        "image_url": "https://i.ibb.co/DWDz6Lc/Pretzel.jpg",
+        "category": "Bakery Items",
+        "quantity": "1 pretzel",
+        "price": 2.99,
+        "food_origin": "Germany",
+        "short_description": "Baked bread product twisted into a knot, typically salted and enjoyed as a snack."
+    },
+    {
+        "food_name": "Bagel with Cream Cheese",
+        "image_url": "https://i.ibb.co/q7Rt62y/Bagel-with-Cream-Cheese.jpg",
+        "category": "Bakery Items",
+        "quantity": "1 bagel",
+        "price": 4.99,
+        "food_origin": "Poland (popularized in the United States)",
+        "short_description": "A ring-shaped bread roll, often topped with cream cheese, popular in the United States."
+    },
+    {
+        "food_name": "Scone",
+        "image_url": "https://i.ibb.co/ckHyRk9/Scone.jpg",
+        "category": "Bakery Items",
+        "quantity": "1 scone",
+        "price": 3.49,
+        "food_origin": "United Kingdom",
+        "short_description": "A baked pastry typically served with tea, containing ingredients like currants or raisins."
+    },
+    {
+        "food_name": "Sushi Rolls",
+        "image_url": "https://i.ibb.co/Qk2Qvfb/Sushi-Rolls.jpg",
+        "category": "Sushi and Sashimi",
+        "quantity": "1 plate",
+        "price": 16.99,
+        "food_origin": "Japan",
+        "short_description": "Various sushi rolls with ingredients like rice, fish, vegetables, and seaweed."
+    },
+    {
+        "food_name": "Sashimi",
+        "image_url": "https://i.ibb.co/BB28H9y/Sashimi.jpg",
+        "category": "Sushi and Sashimi",
+        "quantity": "1 plate",
+        "price": 18.99,
+        "food_origin": "Japan",
+        "short_description": "Sliced raw fish, served with soy sauce and wasabi, a delicacy in Japanese cuisine."
+    },
+    {
+        "food_name": "Nigiri Sushi",
+        "image_url": "https://i.ibb.co/cDqhdXk/Nigiri-Sushi.jpg",
+        "category": "Sushi and Sashimi",
+        "quantity": "1 plate",
+        "price": 14.99,
+        "food_origin": "Japan",
+        "short_description": "Hand-pressed sushi with a small bed of rice topped with various ingredients like fish or seafood."
+    },
+    {
+        "food_name": "Maki Rolls",
+        "image_url": "https://i.ibb.co/99ZXpJ1/Maki-Rolls.jpg",
+        "category": "Sushi and Sashimi",
+        "quantity": "1 plate",
+        "price": 15.99,
+        "food_origin": "Japan",
+        "short_description": "Sushi rolls wrapped in seaweed, filled with rice, vegetables, and fish or other ingredients."
+    },
+    {
+        "food_name": "Tempura Rolls",
+        "image_url": "https://i.ibb.co/61VyHPF/Tempura-Rolls.jpg",
+        "category": "Sushi and Sashimi",
+        "quantity": "1 plate",
+        "price": 17.99,
+        "food_origin": "Japan",
+        "short_description": "Sushi rolls with tempura-fried ingredients, providing a delightful crunchy texture."
+    },
+    {
+        "food_name": "Tacos",
+        "image_url": "https://i.ibb.co/qxjCP40/Tacos.jpg",
+        "category": "Street Food",
+        "quantity": "2 tacos",
+        "price": 9.99,
+        "food_origin": "Mexico",
+        "short_description": "Soft or hard tortillas filled with seasoned meat, salsa, and various toppings."
+    },
+    {
+        "food_name": "Falafel Wrap",
+        "image_url": "https://i.ibb.co/9VgKrYQ/Falafel-Wrap.jpg",
+        "category": "Street Food",
+        "quantity": "1 wrap",
+        "price": 8.99,
+        "food_origin": "Middle East",
+        "short_description": "Deep-fried chickpea patties, wrapped in a flatbread with tahini sauce and veggies."
+    },
+    {
+        "food_name": "Hot Dog",
+        "image_url": "https://i.ibb.co/G3TrfWS/Hot-Dog.jpg",
+        "category": "Street Food",
+        "quantity": "1 hot dog",
+        "price": 5.99,
+        "food_origin": "United States",
+        "short_description": "Grilled or steamed sausage, typically served in a sliced bun with condiments."
+    },
+    {
+        "food_name": "Samosa",
+        "image_url": "https://i.ibb.co/HYfdnvN/Samosa.jpg",
+        "category": "Street Food",
+        "quantity": "2 samosas",
+        "price": 6.99,
+        "food_origin": "India",
+        "short_description": "Deep-fried pastry filled with spiced potatoes, peas, and sometimes meat."
+    },
+    {
+        "food_name": "Kebab",
+        "image_url": "https://i.ibb.co/LZF95MP/Kebab.jpg",
+        "category": "Street Food",
+        "quantity": "1 skewer",
+        "price": 7.99,
+        "food_origin": "Middle East",
+        "short_description": "Grilled or skewered meat, often served with vegetables and a flavorful sauce."
+    },
+    {
+        "food_name": "Tiramisu",
+        "image_url": "https://i.ibb.co/zSM44zr/Tiramisu.jpg",
+        "category": "Desserts",
+        "quantity": "1 slice",
+        "price": 6.99,
+        "food_origin": "Italy",
+        "short_description": "Italian dessert consisting of layers of coffee-soaked ladyfingers and mascarpone cheese."
+    },
+    {
+        "food_name": "Chocolate Cake",
+        "image_url": "https://i.ibb.co/TRxkf4q/Chocolate-Cake.jpg",
+        "category": "Desserts",
+        "quantity": "1 slice",
+        "price": 5.99,
+        "food_origin": "Global",
+        "short_description": "Decadent chocolate cake made with rich cocoa, butter, and topped with chocolate ganache."
+    },
+    {
+        "food_name": "Cheesecake",
+        "image_url": "https://i.ibb.co/vvNDSxh/Cheesecake.jpg",
+        "category": "Desserts",
+        "quantity": "1 slice",
+        "price": 7.99,
+        "food_origin": "Ancient Greece (modern version popularized in the United States)",
+        "short_description": "Sweet dessert with a graham cracker crust and a creamy filling, often topped with fruit."
+    },
+    {
+        "food_name": "Mochi Ice Cream",
+        "image_url": "https://i.ibb.co/z8nbySN/Mochiicecream.jpg",
+        "category": "Desserts",
+        "quantity": "3 pieces",
+        "price": 9.99,
+        "food_origin": "Japan",
+        "short_description": "Japanese rice cake filled with flavored ice cream, wrapped in a chewy mochi covering."
+    },
+    {
+        "food_name": "Baklava",
+        "image_url": "https://i.ibb.co/6DDkF0N/Baklava.jpg",
+        "category": "Desserts",
+        "quantity": "1 piece",
+        "price": 8.99,
+        "food_origin": "Middle East",
+        "short_description": "Sweet pastry made of layers of filo dough, filled with chopped nuts and sweetened with honey or syrup."
+    },
+    {
+        "food_name": "Chicken Curry",
+        "image_url": "https://i.ibb.co/JvWLMLr/Chicken-Curry.jpg",
+        "category": "Curries",
+        "quantity": "1 bowl",
+        "price": 11.99,
+        "food_origin": "India",
+        "short_description": "Savory curry made with tender chicken pieces, aromatic spices, and a flavorful sauce."
+    },
+    {
+        "food_name": "Massaman Curry",
+        "image_url": "https://i.ibb.co/p3ppnwN/Massaman-Curry.jpg",
+        "category": "Curries",
+        "quantity": "1 bowl",
+        "price": 13.99,
+        "food_origin": "Thailand",
+        "short_description": "Thai curry with rich coconut milk, potatoes, and peanuts, often made with beef or chicken."
+    },
+    {
+        "food_name": "Beef Rendang",
+        "image_url": "https://i.ibb.co/L85TbK3/Beef-Rendang.jpg",
+        "category": "Curries",
+        "quantity": "1 bowl",
+        "price": 15.99,
+        "food_origin": "Indonesia",
+        "short_description": "Slow-cooked beef in a flavorful coconut and spice mixture, creating a tender and aromatic dish."
+    },
+    {
+        "food_name": "Yellow Curry",
+        "image_url": "https://i.ibb.co/72rB66s/Yellow-Curry.jpg",
+        "category": "Curries",
+        "quantity": "1 bowl",
+        "price": 12.99,
+        "food_origin": "Thailand",
+        "short_description": "Mild Thai curry with turmeric, lemongrass, and coconut milk, typically with vegetables and chicken."
+    },
+    {
+        "food_name": "Red Curry",
+        "image_url": "https://i.ibb.co/vzTfcZf/Red-Curry.jpg",
+        "category": "Curries",
+        "quantity": "1 bowl",
+        "price": 12.99,
+        "food_origin": "Thailand",
+        "short_description": "Spicy Thai curry with red chili paste, coconut milk, and a variety of proteins and vegetables."
+    },
+    {
+        "food_name": "BLT (Bacon, Lettuce, Tomato)",
+        "image_url": "https://i.ibb.co/BTdyKFf/BLT.jpg",
+        "category": "Sandwiches",
+        "quantity": "1 sandwich",
+        "price": 8.99,
+        "food_origin": "United States",
+        "short_description": "Classic American sandwich with bacon, lettuce, tomato, and mayonnaise on toasted bread."
+    },
+    {
+        "food_name": "Cuban Sandwich",
+        "image_url": "https://i.ibb.co/FbVbrY8/Cuban-Sandwich.jpg",
+        "category": "Sandwiches",
+        "quantity": "1 sandwich",
+        "price": 8.99,
+        "food_origin": "Cuba",
+        "short_description": "A Cuban sandwich with ham, roasted pork, Swiss cheese, pickles, mustard, and sometimes salami on Cuban bread."
+    },
+    {
+        "food_name": "Banh Mi",
+        "image_url": "https://i.ibb.co/kmG0k5X/Banh-Mi.jpg",
+        "category": "Sandwiches",
+        "quantity": "1 sandwich",
+        "price": 6.99,
+        "food_origin": "Vietnam",
+        "short_description": "A Vietnamese sandwich with a baguette filled with a variety of ingredients, such as grilled pork, pate, mayo, and vegetables."
+    },
+    {
+        "food_name": "Panini",
+        "image_url": "https://i.ibb.co/xXVSd2Y/panini.jpg",
+        "category": "Sandwiches",
+        "quantity": "1 sandwich",
+        "price": 9.99,
+        "food_origin": "Italy",
+        "short_description": "An Italian grilled sandwich made with Italian bread and filled with ingredients like ham, cheese, and vegetables."
+    },
+    {
+        "food_name": "Potstickers",
+        "image_url": "https://i.ibb.co/2WRmp32/Potstickers.jpg",
+        "category": "Dumplings",
+        "quantity": "1 serving",
+        "price": 10.99,
+        "food_origin": "China",
+        "short_description": "Chinese dumplings with a thin wrapper, filled with a mixture of ground pork, cabbage, and seasonings, pan-fried to perfection."
+    },
+    {
+        "food_name": "Gyoza",
+        "image_url": "https://i.ibb.co/Q81LqG6/Gyoza.jpg",
+        "category": "Dumplings",
+        "quantity": "1 serving",
+        "price": 11.99,
+        "food_origin": "Japan",
+        "short_description": "Japanese dumplings filled with ground meat and vegetables, typically wrapped in a thin dough and pan-fried."
+    },
+    {
+        "food_name": "Momo",
+        "image_url": "https://i.ibb.co/Vtq0z54/Momo.jpg",
+        "category": "Dumplings",
+        "quantity": "1 serving",
+        "price": 12.99,
+        "food_origin": "Nepal/Tibet",
+        "short_description": "Nepali/Tibetan dumplings with spiced meat or vegetables, wrapped in dough and either steamed or fried."
+    },
+    {
+        "food_name": "Pierogi",
+        "image_url": "https://i.ibb.co/0MzzR74/Pierogi.jpg",
+        "category": "Dumplings",
+        "quantity": "1 serving",
+        "price": 8.99,
+        "food_origin": "Poland",
+        "short_description": "Polish dumplings with various fillings, such as potatoes, cheese, meat, or fruits, typically boiled or fried."
+    },
+    {
+        "food_name": "Ravioli",
+        "image_url": "https://i.ibb.co/LtCQZCR/Ravioli.jpg",
+        "category": "Dumplings",
+        "quantity": "1 serving",
+        "price": 13.99,
+        "food_origin": "Italy",
+        "short_description": "Italian dumplings filled with a variety of ingredients like cheese, meat, or vegetables, served with pasta sauce."
+    },
+    {
+        "food_name": "Caesar Salad",
+        "image_url": "https://i.ibb.co/L6dw0Lb/Caesar-Salad.jpg",
+        "category": "Salads",
+        "quantity": "1 salad",
+        "price": 7.99,
+        "food_origin": "Mexico (created by an Italian chef in the United States)",
+        "short_description": "A classic salad with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing."
+    },
+    {
+        "food_name": "Greek Salad",
+        "image_url": "https://i.ibb.co/JF6jNdc/Greek-Salad.jpg",
+        "category": "Salads",
+        "quantity": "1 salad",
+        "price": 9.99,
+        "food_origin": "Greece",
+        "short_description": "A Greek salad with tomatoes, cucumbers, olives, feta cheese, and Greek dressing."
+    },
+    {
+        "food_name": "Caprese Salad",
+        "image_url": "https://i.ibb.co/hWBWyWZ/caprese-salad.jpg",
+        "category": "Salads",
+        "quantity": "1 salad",
+        "price": 8.99,
+        "food_origin": "Italy",
+        "short_description": "An Italian salad with fresh tomatoes, mozzarella cheese, basil, and balsamic glaze."
+    },
+    {
+        "food_name": "Cobb Salad",
+        "image_url": "https://i.ibb.co/wr8hRHt/Cobb-Salad.jpg",
+        "category": "Salads",
+        "quantity": "1 salad",
+        "price": 10.99,
+        "food_origin": "United States",
+        "short_description": "A hearty American salad with chopped greens, tomatoes, bacon, eggs, avocado, and blue cheese."
+    },
+    {
+        "food_name": "Nicoise Salad",
+        "image_url": "https://i.ibb.co/XjDHWbr/Nicoise-Salad.jpg",
+        "category": "Salads",
+        "quantity": "1 salad",
+        "price": 11.99,
+        "food_origin": "France",
+        "short_description": "A French salad with tuna, boiled eggs, green beans, olives, and potatoes, typically served with vinaigrette."
+    },
+    {
+        "food_name": "Paella",
+        "image_url": "https://i.ibb.co/LrsyQ94/Paella.jpg",
+        "category": "Rice Dishes",
+        "quantity": "1 serving",
+        "price": 16.99,
+        "food_origin": "Spain",
+        "short_description": "A Spanish rice dish with saffron, various seafood, chicken, and vegetables, cooked to perfection."
+    },
+    {
+        "food_name": "Sushi",
+        "image_url": "https://i.ibb.co/mXXxFrz/Sushi.jpg",
+        "category": "Rice Dishes",
+        "quantity": "1 serving",
+        "price": 18.99,
+        "food_origin": "Japan",
+        "short_description": "Japanese rice and fish delicacies, including a variety of rolls and nigiri, served with soy sauce and wasabi."
+    },
+    {
+        "food_name": "Biryani",
+        "image_url": "https://i.ibb.co/9bhcgqC/Biryani.jpg",
+        "category": "Rice Dishes",
+        "quantity": "1 serving",
+        "price": 14.99,
+        "food_origin": "India",
+        "short_description": "An aromatic Indian rice dish with basmati rice, meat (chicken, mutton, or beef), and a blend of spices."
+    },
+    {
+        "food_name": "Fried Rice",
+        "image_url": "https://i.ibb.co/Sw6s9kJ/Fried-Rice.jpg",
+        "category": "Rice Dishes",
+        "quantity": "1 serving",
+        "price": 12.99,
+        "food_origin": "China",
+        "short_description": "Chinese-style fried rice with a mix of vegetables, eggs, and choice of protein, seasoned to perfection."
+    },
+    {
+        "food_name": "Jollof Rice",
+        "image_url": "https://i.ibb.co/dGwMQPZ/Jollof-Rice.jpg",
+        "category": "Rice Dishes",
+        "quantity": "1 serving",
+        "price": 15.99,
+        "food_origin": "West Africa",
+        "short_description": "A West African rice dish cooked with tomatoes, onions, and a blend of spices, often served with chicken or fish."
+    }
+]

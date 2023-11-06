@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "image": "https://i.ibb.co/SRm2rCb/chef1.jpg",
+        "specialty": "Italian Cuisine",
+        "experience": "12+ years",
+        "description": "Passionate about creating delicious and authentic Italian dishes."
+    },
+    {
+        "id": 2,
+        "name": "Emily Johnson",
+        "image": "https://i.ibb.co/P1KrrNs/chef2.jpg",
+        "specialty": "French Cuisine",
+        "experience": "10+ years",
+        "description": "Bringing the flavors of France to your table with a touch of creativity."
+    },
+    {
+        "id": 3,
+        "name": "Michael Davis",
+        "image": "https://i.ibb.co/NVR0ZJd/chef6.jpg",
+        "specialty": "Japanese Cuisine",
+        "experience": "15+ years",
+        "description": "Mastering the art of sushi and traditional Japanese cooking techniques."
+    },
+    {
+        "id": 4,
+        "name": "Sarah Turner",
+        "image": "https://i.ibb.co/BthXKts/chef5.jpg",
+        "specialty": "Mediterranean Cuisine",
+        "experience": "8+ years",
+        "description": "Crafting Mediterranean dishes with a modern and healthy twist."
+    },
+    {
+        "id": 5,
+        "name": "Alex Rodriguez",
+        "image": "https://i.ibb.co/d6t4dC9/chef7.jpg",
+        "specialty": "Mexican Cuisine",
+        "experience": "10+ years",
+        "description": "Bringing the vibrant and bold flavors of Mexico to your plate."
+    },
+    {
+        "id": 6,
+        "name": "Mia Williams",
+        "image": "https://i.ibb.co/WDxJ472/chef4.jpg",
+        "specialty": "Vegetarian & Vegan Cuisine",
+        "experience": "7+ years",
+        "description": "Passionate about creating delicious and innovative plant-based dishes."
+    }
+]
