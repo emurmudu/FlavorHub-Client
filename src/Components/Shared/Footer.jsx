@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <footer className="footer items-center p-4 bg-neutral text-neutral-content">
+            <footer className="footer items-center p-4 border-t-2 border-gray-700 text-neutral-content">
                 <aside>
                     <a className=" cursor-pointer normal-case font-bold text-2xl md:text-3xl"><span className="text-yellow-700">Flavor</span><span><span className="">H</span>ub</span></a>
                     <p>Copyright © 2023 - All right reserved by <span><span className=" text-yellow-600 font-bold">Flavor</span>Hub</span></p>

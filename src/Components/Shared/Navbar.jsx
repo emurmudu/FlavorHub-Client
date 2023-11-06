@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
 
-        <div className="navbar bg-base-100">
+        <div className="navbar shadow-md bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -41,17 +41,17 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <a className=" cursor-pointer normal-case font-bold text-2xl md:text-3xl"><span className="text-yellow-700">Flavor</span><span><span className="">H</span>ub</span></a>
+                <a className=" cursor-pointer normal-case font-bold text-2xl md:text-3xl"><span className="text-yellow-700">Flavor</span><span><span className=" shadow-yellow-600">H</span>ub</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/allFoods'>All Foods</NavLink></li>
                     <li><NavLink to='/blog'>Blog</NavLink></li>
-                    <li tabIndex={0} >
-                        <details>
-                            <summary className="relative ">My Profile</summary>
-                            <ul className="p-2 absolute w-max bg-white mt-2">
+                    <li tabIndex={0}>
+                        <details className="relative z-10">
+                            <summary className="relative z-10">My Profile</summary>
+                            <ul className=" absolute w-max rounded-none z-10">
                                 <li><NavLink to='/myAddedFoods'>My Added Food Items</NavLink></li>
                                 <li><NavLink to='/addFoodItem'>Add a Food Item</NavLink></li>
                                 <li><NavLink to='/myOrders'>My Ordered Food Items</NavLink></li>
