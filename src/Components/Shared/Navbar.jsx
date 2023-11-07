@@ -1,14 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
-
     const { user, logOut } = useContext(AuthContext);
+    const [profileDropdown, setProfileDropdown] = useState(false);
 
-    const handleLogOUt = () => {
+    const handleProfileDropdown = () => {
+        setProfileDropdown(!profileDropdown);
+    };
+
+    const handleLogOut = () => {
         logOut()
             .then(() => toast('You are logged out'))
             .catch(error => {
@@ -17,9 +21,7 @@ const Navbar = () => {
             })
     }
 
-
     return (
-
         <div className="navbar shadow-md bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
@@ -30,60 +32,54 @@ const Navbar = () => {
                         <li><NavLink to='/'>Home</NavLink></li>
                         <li><NavLink to='/allFoods'>All Foods</NavLink></li>
                         <li><NavLink to='/blog'>Blog</NavLink></li>
-                        <li>
-                            <a>My Profile</a>
-                            <ul className="p-2">
-                                <li><NavLink to='/myAddedFoods'>My Added Foods</NavLink></li>
-                                <li><NavLink to='/addFoodItem'>Add a Food</NavLink></li>
-                                <li><NavLink to='/myOrders'>My Orders</NavLink></li>
-                            </ul>
-                        </li>
-
                     </ul>
                 </div>
-                <a className=" cursor-pointer normal-case font-bold text-2xl md:text-3xl"><span className="text-yellow-700">Flavor</span><span><span className=" shadow-yellow-600">H</span>ub</span></a>
+                <a className=" cursor-pointer normal-case font-bold text-2xl md:text-3xl">
+                    <span className="text-yellow-700">Flavor</span>
+                    <span><span className=" shadow-yellow-600">H</span>ub</span>
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li><NavLink to='/'>Home</NavLink></li>
                     <li><NavLink to='/allFoods'>All Foods</NavLink></li>
                     <li><NavLink to='/blog'>Blog</NavLink></li>
-                    <li tabIndex={0}>
-                        <details className="relative z-10">
-                            <summary className="relative z-10">My Profile</summary>
-                            <ul className=" absolute w-max rounded-none z-10">
-                                <li><NavLink to='/myAddedFoods'>My Added Food Items</NavLink></li>
-                                <li><NavLink to='/addFoodItem'>Add a Food Item</NavLink></li>
-                                <li><NavLink to='/myOrders'>My Ordered Food Items</NavLink></li>
-                            </ul>
-                        </details>
-                    </li>
-
                 </ul>
             </div>
 
             <div className="navbar-end">
-                {
-                    user ? <>
-                        <span className=" hidden lg:block font-bold p-2">{user.displayName
-                        }</span>
+                {user ? (
+                    <>
+                        <span className="hidden lg:block font-bold p-2">{user.displayName}</span>
                         <div className="flex items-center gap-1">
-
-                            <img className="hidden md:block btn btn-ghost btn-circle avatar" src={user.photoURL
-                            } />
-                            <a onClick={handleLogOUt} className="btn btn-sm font-bold dark:text-white dark:bg-zinc-700">Logout</a>
+                            <img
+                                onClick={handleProfileDropdown}
+                                className=" md:block btn btn-ghost btn-circle avatar"
+                                src={user.photoURL}
+                                alt="Profile"
+                            />
+                            {profileDropdown && (
+                                // <ul className=" absolute w-max flex flex-col rounded-none z-10 right-28 mt-48 text-right p-4 lg:text-left">
+                                <ul tabIndex={0} className="absolute z-10 right-12 xl:right-36 md:right-12 lg:right-14 mt-40 menu menu-sm dropdown-content  p-2 shadow bg-base-100 rounded ">
+                                    <li ><NavLink to='/myAddedFoods'>My Items</NavLink></li>
+                                    <li ><NavLink to='/addFoodItem'>Add Food</NavLink></li>
+                                    <li ><NavLink to='/myOrders'>My Orders</NavLink></li>
+                                </ul>
+                            )}
+                            <a onClick={handleLogOut} className="btn btn-sm font-bold dark:text-white dark:bg-zinc-700">
+                                Logout
+                            </a>
                         </div>
                     </>
-                        :
-                        <NavLink to="/login">
-                            <a className=" font-bold">Login</a>
-                        </NavLink>
-                }
+                ) : (
+                    <NavLink to="/login">
+                        <a className=" font-bold">Login</a>
+                    </NavLink>
+                )}
             </div>
             <ToastContainer />
         </div>
     );
-
 };
 
 export default Navbar;
