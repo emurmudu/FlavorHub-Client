@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
 
@@ -9,10 +9,69 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [loggedInUserEmail, setLoggedInUserEmail] = useState(null);
 
-    const createUser = (email, password) => {
+    // const createUser = (email, password) => {
+    //     setLoading(true);
+    //     return createUserWithEmailAndPassword(auth, email, password)
+    // }
+
+
+
+    const createUser = (email, password, displayName, photoURL) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password)
-    }
+            .then((result) => {
+                const user = result.user;
+
+                return updateProfile(user, {
+                    displayName: displayName,
+                    photoURL: photoURL,
+                }).then(() => {
+                    setLoggedInUserEmail(result.user.email);
+                    setLoading(false);
+                    return result;
+                }).catch((error) => {
+                    console.error("Error updating user profile:", error);
+                    setLoading(false);
+                    throw error;
+                });
+            })
+            .catch((error) => {
+                console.error("Error creating new user:", error);
+                setLoading(false);
+                throw error;
+            });
+    };
+
+
+
+
+
+
+    // const createUser = async (email, password, additionalData) => {
+    //     // eslint-disable-next-line no-useless-catch
+    //     try {
+    //         const result = await createUserWithEmailAndPassword(auth, email, password);
+    //         const user = result.user;
+
+    //         // Additional code to store user data in MongoDB
+    //         await fetch('http://localhost:5000/register', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({
+    //                 email,
+    //                 password,
+    //                 name: additionalData.name,
+    //                 photoURL: additionalData.photoURL,
+    //             }),
+    //         });
+
+    //         return user;
+    //     } catch (error) {
+    //         throw error;
+    //     }
+    // };
 
 
     const logInWithUser = (email, password) => {

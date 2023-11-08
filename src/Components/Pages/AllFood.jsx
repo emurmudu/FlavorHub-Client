@@ -6,7 +6,8 @@ const AllFood = () => {
 
 
     useEffect(() => {
-        fetch('food.json')
+        // fetch('food.json')
+        fetch('http://localhost:5000/allFoods')
             .then(res => res.json())
             .then(data => setFoods(data));
     }, [])

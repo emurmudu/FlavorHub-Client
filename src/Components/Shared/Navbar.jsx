@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -55,8 +55,9 @@ const Navbar = () => {
                             <img
                                 onClick={handleProfileDropdown}
                                 className=" md:block btn btn-ghost btn-circle avatar"
-                                src={user.photoURL}
+                                src={user.photoURL || 'https://i.ibb.co/FH5XVy5/images.jpg'}
                                 alt="Profile"
+
                             />
                             {profileDropdown && (
                                 // <ul className=" absolute w-max flex flex-col rounded-none z-10 right-28 mt-48 text-right p-4 lg:text-left">

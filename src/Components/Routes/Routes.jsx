@@ -9,6 +9,10 @@ import Blog from "../Pages/Blog";
 import AllFood from "../Pages/AllFood";
 import MyAddedFood from "../Pages/MyAddedFood";
 import MyOrderedFood from "../Pages/MyOrderedFood";
+import Navbar from "../Shared/Navbar";
+import SingleFood from "../Pages/SingleFood";
+import FoodPurchase from "../Pages/FoodPurchase";
+import Users from "../Users/Users";
 
 const router = createBrowserRouter([
     {
@@ -25,12 +29,26 @@ const router = createBrowserRouter([
                 element: <AllFood></AllFood>
             },
             {
+                path: '/singleFood/:id',
+                element: <SingleFood></SingleFood>,
+                loader: ({ params }) => fetch(`http://localhost:5000/allFoods/${params.id}`)
+            },
+            {
+                path: 'foodPurchase/:id',
+                element: <FoodPurchase></FoodPurchase>,
+                loader: ({ params }) => fetch(`http://localhost:5000/allFoods/${params.id}`)
+            },
+            {
                 path: '/blog',
                 element: <Blog></Blog>
             },
             {
                 path: '/myAddedFoods',
                 element: <MyAddedFood></MyAddedFood>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
             },
             {
                 path: '/addFoodItem',
@@ -45,11 +63,10 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: '/login',
-                element: <Login></Login>
+                path: '/users',
+                element: <Users></Users>,
+                loader: () => fetch('http://localhost:5000/user')
             },
-
-
 
             {
                 path: '/blog',

@@ -4,6 +4,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -19,8 +20,9 @@ const Register = () => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
+        const photoURL = e.target.photoURL.value;
         const password = e.target.password.value;
-        console.log(name, email, password);
+        console.log(name, email, photoURL, password);
 
         if (password.length < 6) {
             setRegisterError('Password length should be 6 or above');
@@ -40,11 +42,29 @@ const Register = () => {
 
 
         try {
-            const result = await createUser(email, password);
+            // const result = await createUser(email, password, { name, photoURL });
+            const result = await createUser(email, password, name);
+            console.log('What is this', result);
+
+
+            const user = result.user;
+            await updateProfile(user, {
+                displayName: name,
+                photoURL: photoURL,
+            });
 
             // Additional fetch request here
 
+            const userData = { name, email, password, photoURL };
+            fetch('http://localhost:5000/user', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            })
 
+            console.log('What is this', result);
             console.log(result.user);
             toast.success('You have registered successfully', {
                 position: toast.POSITION.TOP_RIGHT,
@@ -77,6 +97,12 @@ const Register = () => {
                             <span className="label-text dark:text-white">Email</span>
                         </label>
                         <input type="email" name="email" placeholder="your email" className="input input-bordered dark:bg-zinc-700" required />
+                    </div>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text dark:text-white">Photo URL</span>
+                        </label>
+                        <input type="text" name="photoURL" placeholder="your photo url" className="input input-bordered dark:bg-zinc-700" required />
                     </div>
                     <div className="form-control">
                         <label className="label">
