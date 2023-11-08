@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
 
@@ -13,7 +14,9 @@ const Banner = () => {
                             Experience the art of culinary excellence effortlessly with our restaurant management platform. From streamlined food inventory to efficient order tracking, we empower your culinary journey, ensuring a delectable experience for both you and your patrons.
                         </p>
                         <div>
-                            <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            <Link to="/allFoods">
+                                <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -34,7 +37,9 @@ const Banner = () => {
                             Welcome to a seamless restaurant management solution that empowers <br />  you to streamline operations, enhance customer experiences, <br /> and savor  the taste of success. From menu creation to order tracking, we've got your<br /> restaurant covered, ensuring a delightful journey in every bite and every click.
                         </p>
                         <div className="text-right">
-                            <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            <Link to="/allFoods">
+                                <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -54,7 +59,9 @@ const Banner = () => {
                             Experience seamless restaurant management with our comprehensive solutions. From menu customization to order tracking, we empower your culinary journey in the digital era. Let your flavors shine as we handle the rest, ensuring a delightful experience for both you and your patrons
                         </p>
                         <div>
-                            <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            <Link to="/allFoods">
+                                <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -74,7 +81,9 @@ const Banner = () => {
                             Empower your culinary journey with our comprehensive restaurant management <br /> platform. From menu creation to order fulfillment, elevate your dining experience seamlessly
                         </p>
                         <div className="text-right">
-                            <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            <Link to="/allFoods">
+                                <button className="btn btn-outline btn-warning text-yellow-600">Explore Now</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

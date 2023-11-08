@@ -13,6 +13,8 @@ import Navbar from "../Shared/Navbar";
 import SingleFood from "../Pages/SingleFood";
 import FoodPurchase from "../Pages/FoodPurchase";
 import Users from "../Users/Users";
+import PrivateRoute from "./PrivateRoute";
+import UpdateFood from "../Pages/UpdateFood";
 
 const router = createBrowserRouter([
     {
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'foodPurchase/:id',
-                element: <FoodPurchase></FoodPurchase>,
+                element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/allFoods/${params.id}`)
             },
             {
@@ -51,12 +53,17 @@ const router = createBrowserRouter([
                 element: <Login></Login>
             },
             {
+                path: '/updateFood/:id',
+                element: <UpdateFood></UpdateFood>,
+                loader: ({ params }) => fetch(`http://localhost:5000/uploadedFoods/${params.id}`)
+            },
+            {
                 path: '/addFoodItem',
                 element: <AddFoodItem></AddFoodItem>
             },
             {
                 path: '/myOrders',
-                element: <MyOrderedFood></MyOrderedFood>
+                element: <PrivateRoute><MyOrderedFood></MyOrderedFood></PrivateRoute>
             },
             {
                 path: '/register',

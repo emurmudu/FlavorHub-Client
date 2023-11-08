@@ -16,7 +16,7 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
 
 
-    const handleSignUp = async (e) => {
+    const handleRegiseter = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -85,7 +85,7 @@ const Register = () => {
             <h2 className=" text-center text-3xl mt-4 mb-4">Please Register</h2>
 
             <div className="">
-                <form onSubmit={handleSignUp} className="card-body w-3/4 md:w-2/4 lg:w-2/5 mx-auto dark:text-white shadow-xl border">
+                <form onSubmit={handleRegiseter} className="card-body w-3/4 md:w-2/4 lg:w-2/5 mx-auto dark:text-white shadow-xl border">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text dark:text-white">Name</span>
