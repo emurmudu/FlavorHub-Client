@@ -35,7 +35,7 @@ const AddFoodItem = () => {
 
         console.log(addedItems)
 
-        fetch('http://localhost:5000/myFoods', {
+        fetch('https://assignment-11-server-steel.vercel.app/myFoods', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

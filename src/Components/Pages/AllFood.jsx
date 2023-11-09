@@ -9,7 +9,7 @@ const AllFood = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allFoods?page=${currentPage}&search=${searchTerm}`)
+        fetch(`https://assignment-11-server-steel.vercel.app/allFoods?page=${currentPage}&search=${searchTerm}`)
             .then(res => res.json())
             .then(data => {
                 setTotalPages(data.totalPages);
@@ -27,14 +27,13 @@ const AllFood = () => {
             <Helmet>
                 <title>FlavorHub | All Foods</title>
             </Helmet>
-            <h1 className="text-2xl font-bold mb-4">All Foods : {foods.length}</h1>
-            <div className="mb-4">
+            <div className="mb-4 mt-8 pr-8 text-right">
                 <input
                     type="text"
                     placeholder="Search by food name..."
                     value={searchTerm}
                     onChange={handleSearch}
-                    className="px-4 py-2 border border-gray-300 rounded"
+                    className="px-4 py-2 border rounded"
                 />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">

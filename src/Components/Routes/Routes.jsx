@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path: '/topFoods',
                 element: <TopFoods></TopFoods>,
-                loader: () => fetch('http://localhost:5000/topFoods')
+                loader: () => fetch('https://assignment-11-server-steel.vercel.app/topFoods')
             },
             {
                 path: '/topFoodCard',
@@ -44,12 +44,12 @@ const router = createBrowserRouter([
             {
                 path: '/singleFood/:id',
                 element: <SingleFood></SingleFood>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-11-server-steel.vercel.app/allFoods/${params.id}`)
             },
             {
                 path: 'foodPurchase/:id',
                 element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-11-server-steel.vercel.app/allFoods/${params.id}`)
             },
             {
                 path: '/blog',
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
             {
                 path: '/updateFood/:id',
                 element: <UpdateFood></UpdateFood>,
-                loader: ({ params }) => fetch(`http://localhost:5000/uploadedFoods/${params.id}`)
+                loader: ({ params }) => fetch(`https://assignment-11-server-steel.vercel.app/uploadedFoods/${params.id}`)
             },
             {
                 path: '/addFoodItem',
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
             {
                 path: '/users',
                 element: <Users></Users>,
-                loader: () => fetch('http://localhost:5000/user')
+                loader: () => fetch('https://assignment-11-server-steel.vercel.app/user')
             },
 
             {
