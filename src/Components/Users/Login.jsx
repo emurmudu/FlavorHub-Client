@@ -4,6 +4,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -46,7 +47,11 @@ const Login = () => {
 
     return (
         <div className="mx-auto">
+            <Helmet>
+                <title>FlavorHub | Login</title>
+            </Helmet>
             <h2 className="text-center text-xl md:text-2xl lg:text-3xl mt-4 mb-4">Please Login</h2>
+
             <div className="">
                 <form onSubmit={handleLogIn} className="card-body w-3/4 md:w-2/4 lg:w-2/5 mx-auto dark:text-white border shadow-xl">
                     <div className="form-control">

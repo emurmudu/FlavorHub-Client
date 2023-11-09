@@ -5,6 +5,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -81,6 +82,9 @@ const Register = () => {
 
     return (
         <div className=" mx-auto">
+            <Helmet>
+                <title>FlavorHub | Register</title>
+            </Helmet>
 
             <h2 className=" text-center text-3xl mt-4 mb-4">Please Register</h2>
 

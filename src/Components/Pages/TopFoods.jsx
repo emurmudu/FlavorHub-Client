@@ -37,7 +37,7 @@ const TopFoods = () => {
                                 <h3 className="font-bold text-xl mb-2">{food.food_name}</h3>
                                 <p className="">Category: {food.category}</p>
                                 <p className="">Price: ${food.price}</p>
-                                <Link to="#">
+                                <Link to="/allFoods">
                                     <button className="bg-yellow-600 text-white px-4 py-2 mt-2 inline-block rounded">Details</button>
                                 </Link>
                             </div>
@@ -48,8 +48,8 @@ const TopFoods = () => {
                 <p>Loading top-selling foods...</p>
             )}
             <div className='text-center text-2xl md:text-3xl p-6'>
-                <Link to='allFoods'>
-                    <button className='btn btn-block bg-yellow-600 hover:bg-yellow-700'>All Foods</button>
+                <Link to='/allFoods'>
+                    <button className='btn btn-block hover:bg-yellow-700'>All Foods</button>
                 </Link>
             </div>
         </div>

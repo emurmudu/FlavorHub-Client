@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
     return (
         <div className="container mx-auto my-10 p-6 shadow-lg rounded-md">
+            <Helmet>
+                <title>FlavorHub | Blog</title>
+            </Helmet>
             <h1 className=" text-2xl md:text-3xl text-center font-bold mb-6">Understanding Key Concepts</h1>
 
             <div className="mb-8">
