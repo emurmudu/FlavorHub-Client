@@ -15,6 +15,8 @@ import FoodPurchase from "../Pages/FoodPurchase";
 import Users from "../Users/Users";
 import PrivateRoute from "./PrivateRoute";
 import UpdateFood from "../Pages/UpdateFood";
+import TopFoods from "../Pages/TopFoods";
+import TopFoodCard from "../Pages/TopFoodCard";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,15 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: '/topFoods',
+                element: <TopFoods></TopFoods>,
+                loader: () => fetch('http://localhost:5000/topFoods')
+            },
+            {
+                path: '/topFoodCard',
+                element: <TopFoodCard></TopFoodCard>
             },
             {
                 path: '/allFoods',

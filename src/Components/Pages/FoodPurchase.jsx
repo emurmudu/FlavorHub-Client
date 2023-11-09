@@ -6,18 +6,14 @@ import { toast } from "react-toastify";
 const FoodPurchase = () => {
 
     const allFoods = useLoaderData();
-    // const { title, _id, price, img } = allFoods;
     const { food_name, _id, price, quantity, image_url, category, food_origin, short_description } = allFoods;
     const { user } = useContext(AuthContext);
 
-    const handleOrder = e => {
+    const handleOrder = (e) => {
         e.preventDefault();
         const form = e.target;
-        // const name = form.name.value;
         const name = form.elements['name'].value;
-        // const name = user?.name;
         const email = user?.email;
-        // const date = form.date.value;
         const date = form.elements['date'].value;
 
         const order = {
@@ -31,26 +27,26 @@ const FoodPurchase = () => {
             quantity,
             category,
             food_origin,
-            short_description
-        }
+            short_description,
+        };
 
-        console.log(order)
+        console.log(order);
 
         fetch('http://localhost:5000/addedFoods', {
             method: "POST",
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
             },
-            body: JSON.stringify(order)
+            body: JSON.stringify(order),
         })
-            .then(res => res.json())
-            .then(data => {
+            .then((res) => res.json())
+            .then((data) => {
                 console.log(data);
                 if (data.insertedId) {
-                    toast('Food added successfully')
+                    toast('Food added successfully');
                 }
-            })
-    }
+            });
+    };
     return (
         <div>
             <form onSubmit={handleOrder} className="card-body">

@@ -1,7 +1,7 @@
 import { FaUtensils, FaUsers, FaChartLine, FaMoneyBillWave, FaHeart, FaCogs } from 'react-icons/fa';
 const ExtraOne = () => {
     return (
-        <section className=" py-10 md:py-16 p-4 md:m-8">
+        <section className=" py-8 md:py-10 p-4 md:m-8">
             <div className="container mx-auto">
                 <h2 className=" text-2xl md:text-4xl text-yellow-600 font-bold text-center mb-8 md:mb-12">Our Unique Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
