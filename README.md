@@ -1,10 +1,13 @@
 
 # FlavorHub #
 Live website link :https://assignment-11-client-73bc9.web.app/
-<!-- Live website link :https://assignment-11-client-73bc9.web.app/ -->
+
 
 
 ## Project features : ##
+
+# Project Focus Point #
+* A platform for discovering and sharing food recipes. Users can explore a variety of recipes and contribute their own.
 
 * About Project Basic : assignment_category_0005:
 This project is about restaurant management website. In this project there have many kinds of food managed by a website. This website project is done using react js for frontend development and node express js and mongodb database for backend or server side development.  
@@ -21,3 +24,6 @@ User visitor of this website can see all home page information, all foods inform
 * Authorization and other issue :
 JWT is used to secure user information. For naming website react-helmet is used on homepage, all foods page, blog page, register and login page.
 
+* Technologies used :
+react, react-router-dom, tailwind css, firebase, emailjs, axios, react-helmet, react-icons, react-slick, slick-carousel, react-toastify, styled-components, sweetalert2.
+    
