@@ -32,7 +32,7 @@ const FoodPurchase = () => {
 
         console.log(order);
 
-        fetch('http://localhost:5000/addedFoods', {
+        fetch('https://assignment-11-server-eight-woad.vercel.app/addedFoods', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',

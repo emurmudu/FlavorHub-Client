@@ -9,7 +9,7 @@ const MyOrderedFood = () => {
     const { user } = useContext(AuthContext);
     const [orders, setOrders] = useState([]);
 
-    const url = `http://localhost:5000/addedFoods?email=${user?.email}`;
+    const url = `https://assignment-11-server-eight-woad.vercel.app/addedFoods?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url, { credentials: 'include' })
@@ -21,7 +21,7 @@ const MyOrderedFood = () => {
     // const handleDelete = id => {
     //     const proceed = confirm('Are you sure you want to delete?');
     //     if (proceed) {
-    //         fetch(`http://localhost:5000/addedFoods/${id}`, {
+    //         fetch(`https://assignment-11-server-eight-woad.vercel.app/addedFoods/${id}`, {
     //             method: "DELETE"
     //         })
     //             .then(res => res.json())
@@ -50,7 +50,7 @@ const MyOrderedFood = () => {
 
         if (proceed.isConfirmed) {
             try {
-                const response = await fetch(`http://localhost:5000/addedFoods/${id}`, {
+                const response = await fetch(`https://assignment-11-server-eight-woad.vercel.app/addedFoods/${id}`, {
                     method: 'DELETE'
                 });
 

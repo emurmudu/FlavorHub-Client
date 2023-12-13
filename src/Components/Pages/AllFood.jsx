@@ -9,7 +9,7 @@ const AllFood = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:5000/allFoods?page=${currentPage}&search=${searchTerm}`)
+        fetch(`https://assignment-11-server-eight-woad.vercel.app/allFoods?page=${currentPage}&search=${searchTerm}`)
             .then(res => res.json())
             .then(data => {
                 setTotalPages(data.totalPages);

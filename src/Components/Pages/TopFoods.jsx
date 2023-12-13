@@ -38,7 +38,7 @@ const TopFoods = () => {
     useEffect(() => {
         const fetchTopSellingFoods = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/top-selling-foods');
+                const response = await axios.get('https://assignment-11-server-eight-woad.vercel.app/api/top-selling-foods');
                 setTopSellingFoods(response.data.topSellingFoods);
             } catch (error) {
                 console.error('Error fetching top-selling foods:', error.message);
