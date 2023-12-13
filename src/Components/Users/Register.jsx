@@ -57,7 +57,7 @@ const Register = () => {
             // Additional fetch request here
 
             const userData = { name, email, password, photoURL };
-            fetch('https://assignment-11-server-steel.vercel.app/user', {
+            fetch('http://localhost:5000/user', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

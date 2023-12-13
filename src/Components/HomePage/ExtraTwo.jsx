@@ -2,6 +2,16 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import fakeChefsData from './chef.json';
 import { BsLinkedin } from 'react-icons/bs';
 
+import styled, { css } from 'styled-components';
+const ImageZoom = styled.div`
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;
+
 
 const ExtraTwo = () => {
     return (
@@ -10,7 +20,11 @@ const ExtraTwo = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
                 {fakeChefsData.map((chef) => (
                     <div key={chef.id} className="card lg:card-side shadow-xl rounded-md">
-                        <figure><img src={chef.image} alt={chef.name} /></figure>
+                        <ImageZoom>
+
+                            <figure><img src={chef.image} alt={chef.name} /></figure>
+                        </ImageZoom>
+
                         <div className="card-body">
                             <h2 className=" text-2xl md:text-3xl text-yellow-600 font-semibold mb-4">{chef.name}</h2>
 

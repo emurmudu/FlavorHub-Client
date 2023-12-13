@@ -38,7 +38,7 @@ const UpdateFood = () => {
 
         console.log(updateFood)
 
-        fetch(`https://assignment-11-server-steel.vercel.app/uploadedFoods/${_id}`, {
+        fetch(`http://localhost:5000/uploadedFoods/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

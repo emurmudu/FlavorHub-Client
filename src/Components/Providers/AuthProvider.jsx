@@ -55,7 +55,7 @@ const AuthProvider = ({ children }) => {
     //         const user = result.user;
 
     //         // Additional code to store user data in MongoDB
-    //         await fetch('https://assignment-11-server-steel.vercel.app/register', {
+    //         await fetch('http://localhost:5000/register', {
     //             method: 'POST',
     //             headers: {
     //                 'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const AuthProvider = ({ children }) => {
             //if user exist
             if (currentUser) {
 
-                axios.post('https://assignment-11-server-steel.vercel.app/jwt', loggedUser, { withCredentials: true })
+                axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
                     .then(res => {
                         console.log('token response', res.data);
                     })
@@ -118,7 +118,7 @@ const AuthProvider = ({ children }) => {
                     });
             }
             else {
-                axios.post('https://assignment-11-server-steel.vercel.app/logout', loggedUser, {
+                axios.post('http://localhost:5000/logout', loggedUser, {
                     withCredentials: true
                 })
                     .then(res => {

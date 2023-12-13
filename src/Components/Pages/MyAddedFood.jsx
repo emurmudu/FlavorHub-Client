@@ -9,7 +9,7 @@ const MyAddedFood = () => {
     const { user } = useContext(AuthContext);
     const [orders, setOrders] = useState([]);
 
-    const url = `https://assignment-11-server-steel.vercel.app/uploadedFoods?email=${user?.email}`;
+    const url = `http://localhost:5000/uploadedFoods?email=${user?.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -31,7 +31,7 @@ const MyAddedFood = () => {
 
     //     if (proceed.isConfirmed) {
     //         try {
-    //             const response = await fetch(`https://assignment-11-server-steel.vercel.app/addedFoods/${id}`, {
+    //             const response = await fetch(`http://localhost:5000/addedFoods/${id}`, {
     //                 method: 'DELETE'
     //             });
 
