@@ -17,6 +17,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateFood from "../Pages/UpdateFood";
 import TopFoods from "../Pages/TopFoods";
 import TopFoodCard from "../Pages/TopFoodCard";
+import Contact from "../Pages/Contact";
 
 const router = createBrowserRouter([
     {
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/contact',
+                element: <Contact></Contact>
             },
         ]
     },

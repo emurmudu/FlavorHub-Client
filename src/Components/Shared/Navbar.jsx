@@ -26,6 +26,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/allFoods'>All Foods</NavLink></li>
         <li><NavLink to='/blog'>Blog</NavLink></li>
+        <li ><NavLink to='/contact'>Contact Us</NavLink></li>
         {
             user &&
             <>
@@ -39,6 +40,7 @@ const Navbar = () => {
         <li ><NavLink to='/myAddedFoods'>My Items</NavLink></li>
         <li ><NavLink to='/addFoodItem'>Add Food</NavLink></li>
         <li ><NavLink to='/myOrders'>My Orders</NavLink></li>
+
         {
             user &&
             <>
